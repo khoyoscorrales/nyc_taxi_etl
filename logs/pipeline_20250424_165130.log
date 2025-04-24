@@ -1,0 +1,27 @@
+2025-04-24 16:51:30,943 - src.utils.logging_config - INFO - Iniciando extracción de datos...
+2025-04-24 16:51:30,944 - src.utils.logging_config - INFO - Iniciando descarga desde https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet
+2025-04-24 16:51:36,146 - src.utils.logging_config - INFO - Archivo descargado exitosamente en: data/raw/raw_2022_01.parquet
+2025-04-24 16:51:36,147 - src.utils.logging_config - INFO - Iniciando transformación de datos...
+2025-04-24 16:51:36,147 - src.utils.logging_config - INFO - Inicializando Spark session...
+2025-04-24 16:51:42,547 - src.utils.logging_config - ERROR - Error en transformación: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: java.lang.UnsupportedOperationException: getSubject is supported only if a security manager is allowed
+	at java.base/javax.security.auth.Subject.getSubject(Subject.java:347)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:577)
+	at org.apache.spark.util.Utils$.$anonfun$getCurrentUserName$1(Utils.scala:2416)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2416)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:334)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:238)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-04-24 16:51:42,549 - src.utils.logging_config - ERROR - Fallo en la transformación de datos

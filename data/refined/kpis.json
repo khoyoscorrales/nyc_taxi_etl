@@ -1,0 +1,92 @@
+{
+    "demand_by_hour_weekday_top": [
+        {
+            "weekday": "Monday",
+            "hour": 15,
+            "num_trips": 28442
+        },
+        {
+            "weekday": "Monday",
+            "hour": 17,
+            "num_trips": 27902
+        },
+        {
+            "weekday": "Monday",
+            "hour": 18,
+            "num_trips": 27245
+        },
+        {
+            "weekday": "Monday",
+            "hour": 16,
+            "num_trips": 26924
+        },
+        {
+            "weekday": "Friday",
+            "hour": 18,
+            "num_trips": 26893
+        },
+        {
+            "weekday": "Thursday",
+            "hour": 18,
+            "num_trips": 26530
+        },
+        {
+            "weekday": "Monday",
+            "hour": 14,
+            "num_trips": 25917
+        },
+        {
+            "weekday": "Friday",
+            "hour": 17,
+            "num_trips": 25763
+        },
+        {
+            "weekday": "Thursday",
+            "hour": 17,
+            "num_trips": 25492
+        },
+        {
+            "weekday": "Friday",
+            "hour": 19,
+            "num_trips": 25478
+        }
+    ],
+    "top_zones_by_income_per_mile": {
+        "Zone": {
+            "164": "Newark Airport",
+            "91": "Forest Park/Highland Park",
+            "5": "Astoria Park",
+            "168": "Oakwood",
+            "111": "Highbridge Park"
+        },
+        "avg_income_per_mile": {
+            "164": 13.338316264728554,
+            "91": 10.321183688199206,
+            "5": 7.992268041237114,
+            "168": 7.724137931034484,
+            "111": 7.50405425328026
+        },
+        "avg_speed_mph": {
+            "164": 51.936770196203035,
+            "91": 20.0353484635469,
+            "5": 24.387603666521166,
+            "168": 6.192170818505337,
+            "111": 26.857457105147382
+        },
+        "avg_fare": {
+            "164": 67.29180555555556,
+            "91": 47.666666666666664,
+            "5": 51.68333333333334,
+            "168": 67.2,
+            "111": 50.9
+        },
+        "num_trips": {
+            "164": 72,
+            "91": 6,
+            "5": 12,
+            "168": 1,
+            "111": 10
+        }
+    },
+    "total_records_after_cleaning": 2421241
+}

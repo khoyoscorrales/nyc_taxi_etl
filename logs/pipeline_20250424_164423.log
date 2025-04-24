@@ -1,0 +1,4 @@
+2025-04-24 16:44:24,408 - src.utils.logging_config - INFO - Iniciando extracción de datos...
+2025-04-24 16:44:25,163 - src.utils.logging_config - INFO - Iniciando descarga desde s3://nyc-tlc/trip data/yellow_tripdata_2022-01.parquet
+2025-04-24 16:44:26,472 - src.utils.logging_config - ERROR - Error al descargar archivo: An error occurred (403) when calling the HeadObject operation: Forbidden
+2025-04-24 16:44:26,472 - src.utils.logging_config - ERROR - Fallo en la extracción de datos

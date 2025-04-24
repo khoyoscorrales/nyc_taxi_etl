@@ -1,0 +1,16 @@
+{
+    "extract": {
+        "records": 0,
+        "time": 0
+    },
+    "transform": {
+        "records": 0,
+        "filtered": 0,
+        "time": 0
+    },
+    "load": {
+        "records": 0,
+        "time": 0
+    },
+    "kpis": {}
+}
