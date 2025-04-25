@@ -126,6 +126,24 @@ Pipeline completado exitosamente
 Solo debes modificar la URL en `main.py` para descargar otro archivo de la fuente oficial.
 
 ---
+## Nota sobre Spark
+
+La arquitectura y lógica del pipeline están diseñadas para ser fácilmente migrables a Apache Spark, el estándar para procesamiento distribuido de grandes volúmenes de datos.  
+Para esta prueba, se utilizó pandas por simplicidad y compatibilidad, pero si el volumen de datos lo requiere, las funciones de transformación y agregación pueden implementarse con PySpark.
+
+**Ejemplo de cómo sería la transformación con PySpark:**
+
+```python
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName("NYC Taxi ETL").getOrCreate()
+df = spark.read.parquet("data/raw/raw_2022_01.parquet")
+df_cleaned = df.filter(df.tpep_pickup_datetime < df.tpep_dropoff_datetime)
+# ...más transformaciones...
+df_cleaned.write.parquet("data/trusted/trusted_2022_01.parquet")
+```
+
+Si el equipo lo requiere, puedo adaptar el pipeline a Spark rápidamente.
 
 ## Contacto
 
